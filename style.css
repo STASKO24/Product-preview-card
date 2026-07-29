@@ -1,0 +1,140 @@
+:root{
+    --bg-primary: #F2EAE2;
+    --bg-card: white;
+    --text-primary: #1C232B;
+    --text-secondary: #6C7289;
+    --text-inverse: white;
+    --accent: #3D8168;
+    --accent-active: #1A4032;
+
+    --text-md: calc(14rem /16);
+    --text-sm: calc(13rem / 16);
+    --text-xs: calc(12rem / 16);
+
+    --letter-spacing-sm: calc(5rem / 16);
+
+    --spaccing-xs: calc(4rem / 16);
+    --spacing-sm: calc(8rem / 16);
+
+    --radius-sm: calc(8rem / 16);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+img{
+    max-inline-size: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100svh;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0 11rem 0;
+ }
+
+ .card{
+     width: 100%;
+     max-width: calc(350rem/16);
+     border-radius: var(--radius-sm);
+     overflow: hidden;
+     height: fit-content;
+ }
+
+ .card-img{
+     height: calc(342rem / 16);
+ }
+
+ .card-content{
+     padding: 2rem;
+     background-color: var(--bg-card);
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+ }
+
+ .card-title{
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+ }
+
+ .card-label{
+    font-size: var(--text-xs);
+     letter-spacing: var(--letter-spacing-sm);
+     color: var(--text-secondary);
+ }
+
+ .card-title h1{
+     font-family: 'Fraunces', serif;
+     font-size: 2rem;
+     line-height: 1;
+     font-weight: 700;
+     color: var(--text-primary);
+ }
+
+ .card-description{
+     font-size: var(--text-md);
+     line-height: 1.6;
+     color: var(--text-secondary);
+ }
+
+ .card-price{
+     display: flex;
+     gap: 1rem;
+     align-items: center;
+ }
+
+ .main-price{
+     font-family: 'Fraunces', serif;
+     font-size: 2rem;
+     line-height: 1;
+     font-weight: 700;
+     color: var(--accent);
+ }
+
+ .discount-price{
+     font-size: var(--text-sm);
+     color: var(--text-secondary);
+     text-decoration: line-through;
+ }
+
+ .card-button{
+     background-color: var(--accent);
+     padding: 1rem 2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: var(--spacing-sm);
+     border-radius: var(--radius-sm);
+
+ }
+
+ .button-txt{
+     font-size: var(--text-md);
+     line-height: 1.1;
+     font-weight: 700;
+     color: var(--text-inverse);
+ }
